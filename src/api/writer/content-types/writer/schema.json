@@ -4,7 +4,8 @@
   "info": {
     "singularName": "writer",
     "pluralName": "writers",
-    "displayName": "writer"
+    "displayName": "writer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,20 @@
       "type": "string"
     },
     "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }
