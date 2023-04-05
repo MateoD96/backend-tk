@@ -24,17 +24,10 @@
     "dateCreation": {
       "type": "date"
     },
-    "categorie": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::categorie.categorie",
-      "inversedBy": "article"
-    },
     "subcategorie": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::subcategorie.subcategorie",
-      "inversedBy": "article"
+      "target": "api::subcategorie.subcategorie"
     },
     "imageArticle": {
       "type": "media",
@@ -49,6 +42,16 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categorie.categorie"
+    },
+    "writer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::writer.writer"
     }
   }
 }

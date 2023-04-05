@@ -25,12 +25,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::subcategorie.subcategorie"
-    },
-    "article": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article",
-      "mappedBy": "categorie"
     }
   }
 }
